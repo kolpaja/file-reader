@@ -1,12 +1,14 @@
 .header {
-  max-width: 1280px;
-  padding: 10px 40px;
-  height: 70;
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+}
+.nav {
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  margin: 0 auto;
 }
 .nav-links {
   display: flex;
@@ -17,4 +19,7 @@
 
 a {
   text-decoration: none;
+}
+.logo img {
+  border-radius: 50%;
 }

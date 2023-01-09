@@ -1,13 +1,12 @@
-import React from 'react'
 import './style.css'
 
 type Props = {
   value?: any;
   onChange: (value: any) => void;
-  placeHolder: string;
+  placeHolder?: string;
   cls?: string;
   type: string;
-  label: string;
+  label?: string;
 }
 
 const Input = ({ onChange, value, cls, placeHolder, type, label }: Props) => {
@@ -17,7 +16,7 @@ const Input = ({ onChange, value, cls, placeHolder, type, label }: Props) => {
       <input
         id='input'
         type={type}
-        value={value ? value : ''}
+        value={value}
         placeholder={placeHolder}
         onChange={onChange}
       />

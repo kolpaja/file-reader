@@ -6,6 +6,7 @@ type props = {
   children: React.ReactNode
 }
 
+const currentYear = new Date().getFullYear()
 function App({ children }: props) {
 
   return (
@@ -16,7 +17,7 @@ function App({ children }: props) {
       </div>
       <footer>
         <span>
-          code with love by
+          code with love by{' '}
           <a
             href='https://linktr.ee/kolpaja'
             title='kolpaja links'
@@ -24,6 +25,8 @@ function App({ children }: props) {
           >
             @kolpaja
           </a>
+          {'  '}
+          &copy; {currentYear}
         </span>
       </footer>
     </div>
