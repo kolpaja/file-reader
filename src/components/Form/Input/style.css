@@ -1,0 +1,16 @@
+.input-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input {
+  width: 100%;
+  outline: none;
+}
