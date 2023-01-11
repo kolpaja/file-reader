@@ -1,0 +1,32 @@
+.about {
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.left img {
+  object-fit: cover;
+
+  border-radius: 50%;
+  box-shadow: rgba(15, 62, 133, 0.25) 0px 50px 100px -20px,
+    rgba(39, 88, 213, 0.3) 0px 30px 60px -30px,
+    rgba(27, 38, 202, 0.35) 0px -2px 6px 0px inset;
+}
+
+.full-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.right {
+  max-width: 50%;
+  text-align: left;
+}

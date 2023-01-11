@@ -1,0 +1,100 @@
+.list-view {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.list {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.caption {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  border-right: 1px solid blue;
+
+  margin-bottom: 10px;
+}
+.item span {
+  border-bottom: 1px dashed blue;
+}
+
+.item span:first-child {
+  min-width: 30px;
+}
+.item span:nth-child(2) {
+  min-width: 90px;
+}
+.item span:nth-child(3) {
+  min-width: 90px;
+}
+.item span:nth-child(4) {
+  min-width: 150px;
+}
+.item span:nth-child(5) {
+  min-width: 120px;
+}
+.item span:nth-child(6) {
+  min-width: 90px;
+}
+.item span:nth-child(7) {
+  min-width: 200px;
+}
+.item span:nth-child(8) {
+  min-width: 150px;
+}
+.item span {
+  padding: 0px 5px;
+  margin-bottom: 10px;
+  border-right: 1px solid blue;
+}
+.list-scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.cols {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cols span {
+  padding: 0 5px;
+  text-align: center;
+  border-right: 1px solid blue;
+  border-bottom: 1px dashed blue;
+  margin-bottom: 10px;
+}
+
+.cols span:first-child {
+  min-width: 30px;
+}
+.cols span:nth-child(2) {
+  min-width: 90px;
+}
+.cols span:nth-child(3) {
+  min-width: 90px;
+}
+.cols span:nth-child(4) {
+  min-width: 150px;
+}
+.cols span:nth-child(5) {
+  min-width: 120px;
+}
+.cols span:nth-child(6) {
+  min-width: 90px;
+}
+.cols span:nth-child(7) {
+  min-width: 200px;
+}
+.cols span:nth-child(8) {
+  min-width: 150px;
+}

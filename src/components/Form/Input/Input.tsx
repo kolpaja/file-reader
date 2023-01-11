@@ -9,7 +9,7 @@ type Props = {
   label?: string;
 }
 
-const Input = ({ onChange, value, cls, placeHolder, type, label }: Props) => {
+const Input = ({ onChange, value, cls, placeHolder, type = 'text', label }: Props) => {
   return (
     <div className={`${cls} input-wrapper`}>
       <label htmlFor='input' aria-label='input'>{label}</label>

@@ -13,37 +13,35 @@ export const Home = (props: Props) => {
   const [columns, setColumns] = useState<string>('');
   const [isUploaded, setIsUploaded] = useState(false);
   const [isUploading, setIsUploading] = useState<boolean>(false)
-
-  console.log({});
+  const [search, setSearch] = useState<string>('');
 
   useEffect(() => {
-
-
-    return () => {
-
-    }
-  }, [data, isUploaded, isUploading])
+  }, [data, isUploaded, isUploading, search])
 
   // TODO listing and filtering
-  const filteredData = data
+  const filteredData = data.filter(item => item.split(',').slice(0, 4).join().toLowerCase().includes(search.toLocaleLowerCase()))
   const fileUploaded = data.length > 0
   return (
     <App>
       <div className='home'>
         <h1>Simple File Reader & Display</h1>
+
         <FileImport
           setData={setData}
           setColumns={setColumns}
           setIsUploaded={setIsUploaded}
           setIsUploading={setIsUploading}
         />
-        <Search />
+
+        <Search setSearch={setSearch} />
+
         <ListView
           fileUploaded={fileUploaded}
           data={filteredData}
           isUploading={isUploading}
           columns={columns}
         />
+
       </div>
     </App>
   )
